@@ -1,3 +1,3 @@
-module premiumMindsPokemon
+module PokemonGo
 
 go 1.17

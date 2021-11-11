@@ -1,6 +1,7 @@
 package main
 
 import (
+	"PokemonGo/Models"
 	"bufio"
 	"fmt"
 	"os"
@@ -16,7 +17,7 @@ func GottaCatchEmAll(moves string) (int, error) {
 	visitedSpots := make(map[string]bool)
 
 	var (
-		pos          = Position{}              // Initial position with x:0 and y:0
+		pos          = Models.Position{}       // Initial position with x:0 and y:0
 		count        = 1                       // Number of caught pokemon, start at 1
 		currPosition = fmt.Sprint(0, comma, 0) // Current Position of Ash, start at "0,0"
 
