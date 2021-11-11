@@ -20,3 +20,8 @@ Pokemon: apanhá-los todos. Implementação em Go e Java.
 
 #### For testing only:
 * `go test -v`
+
+## Observations
+#### In the GO Implementation there are two functions which (can) deal with move evaluation:
+* EvaluateMoveBranching - Performs a switch on a given move and calls the corresponding method
+* EvaluateMoveMapped - Makes use of a map which has methods mapped to a given move (E.g map['N'] = goNorth() )
