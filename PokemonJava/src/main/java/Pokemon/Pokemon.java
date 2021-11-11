@@ -19,6 +19,7 @@ public class Pokemon {
     private int pokemonCount;
 
     public Pokemon() {
+
         this.currentPosition = new Position(0, 0);  //Game starts at 0,0
         this.visitedSpots = new HashSet<>();              //HashSet for Unique Positions and O(1) Lookups
         this.pokemonCount = 1;                            //Assume pokemon count is minimum of 1
@@ -76,7 +77,7 @@ public class Pokemon {
     }
 
     /*Gets Move enum based on the char move given
-     * Throws Exceptions.Exceptions.UnknownMoveException if move is not allowed*/
+     * Throws UnknownMoveException if move is not allowed*/
     private Move getEnum(char move) throws UnknownMoveException {
 
         try {
